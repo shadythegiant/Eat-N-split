@@ -186,6 +186,8 @@ function App() {
           : friend
       )
     );
+
+    setSelectedFriend(null);
   }
 
   // JSX
