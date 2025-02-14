@@ -181,7 +181,9 @@ function App() {
   function handleSplitValue(value) {
     setFriends((friends) =>
       friends.map((friend) =>
-        friend.id === selectedFriend.id ? { ...friend, balance: value } : friend
+        friend.id === selectedFriend.id
+          ? { ...friend, balance: friend.balance + value }
+          : friend
       )
     );
   }
